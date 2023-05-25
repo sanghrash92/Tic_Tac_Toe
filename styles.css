@@ -1,9 +1,13 @@
 body {
-    border: 1px solid;
     margin: 0;
 }
 
 .board-container {
+    text-align: center;
+    padding: 2em 0 0 0;
+}
+
+.game-board{
     height: 100vh;
     width: 100vw;
     display: grid;
@@ -12,6 +16,14 @@ body {
     align-content: center;
     justify-items: center;
     align-items: center;
+}
+
+.game--restart {
+    width: 10%;
+    color: white;
+    background-color: black;
+    height: 2em;
+    font-size: 1.1rem;
 }
 
 .cell {
@@ -40,3 +52,9 @@ body {
 .cell:nth-child(7), .cell:nth-child(8), .cell:nth-child(9) {
 	border-bottom: none;
 }
+
+.message-container {
+    text-align: center;
+    font-size: 7rem;
+}
+
